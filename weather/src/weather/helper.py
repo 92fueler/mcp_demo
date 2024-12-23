@@ -2,7 +2,7 @@ from typing import Any
 
 import httpx
 
-from .config import USER_AGENT
+from config import USER_AGENT
 
 async def make_nws_request(client: httpx.AsyncClient, url: str) -> dict[str, Any] | None:
     """Make a request to the NWS API with proper error handling."""
